@@ -1,0 +1,6 @@
+# кодировка
+AddDefaultCharset utf-8
+# модуль перенаправлений (вкл)
+RewriteEngine On
+# перенаправление на public
+RewriteRule (.*) public/$1

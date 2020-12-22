@@ -1,0 +1,21 @@
+{
+  "name": "vendor_name/ishop2.loc",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "ishop\\": "vendor/ishop",
+      "app\\": "app"
+    }
+  },
+  "authors": [
+    {
+      "name": "Maksim",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+
+  }
+}

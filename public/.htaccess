@@ -1,0 +1,12 @@
+# условие перенаправления
+# если запрос не идет на конкретный файл или конкретную папку, то перенаправлем
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# флаги: L - last, последнее правило, QSA - QUERY STRING APPEND если есть дополнительные GET параметры, то они не должны одбрасываться а должны дополняться
+RewriteRule (.*) index.php?$1 [L,QSA]
+
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !index.php
+#RewriteRule ^(.*)$ index.php?requested_file=$1 [QSA,L]
+#</IfModule>
